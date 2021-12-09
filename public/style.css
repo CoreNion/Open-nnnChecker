@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body {
+  background-color: rgb(0, 0, 70);
+  color: #FFF;
+  font-family: -apple-system, system-ui;
+}
+
+h1 {
+  color: aqua;
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.overview {
+  text-align: center;
+  color: #FFF;
+  display: block;
+}
+
+/* Googleログインボタンの下の、規約等が書かれている部分のstyle */
+.Centor {
+  height: 67vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 複数選択系の要素のstyle */
+.proofAccountList{
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* 連携先のサービスへのログインボタンやツイートボタンのstyle */
+.proofAccountLoginLink {
+  border: 1px solid;
+  width: 20em;
+  border-radius: 5px;
+}
+
+.proofAccountLoginLink a {
+  display:block;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.proofAccountLoginLink:hover {
+  opacity: 0.25;
+}
+
+/* トップページのGoogleサインインボタンのstyle */
+.topSignin {
+  width: 20em;
+}
+
+.topSignin:hover {
+  opacity: .7;
+}
+
+.importantLink {
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+}
+
+.copyRight {
+  text-align: center;
+  color: #FFF;
+}
+
+/* 連携したアカウントの概要を表示する部分のstyle */
+.accountArea {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #15202b;
+  width: 300px;
+}
+
+.accountArea img {
+  width: 100px;
+  border-radius: 50px;
+}
+
+.accountArea p {
+  text-align: center;
+}

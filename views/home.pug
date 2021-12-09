@@ -1,0 +1,17 @@
+extends layout
+
+block pageTitle
+  title Welcome | Open nnnChecker
+
+block content
+  p.overview ようこそ、#{email}さん！
+    br
+    | ログインが成功し、N高のアカウントであることが確認できました。
+  
+  h2.overview 証明したいアカウントと連携
+  ul.proofAccountList
+    li.proofAccountLoginLink(style="background-color: rgb(29,161,242);")
+      a(href="/proof/twitter/signin" style="color: #FFF") Twitterでログイン
+
+  p.overview
+    a(href="./logout").importantLink ログアウト

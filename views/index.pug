@@ -1,0 +1,16 @@
+extends layout
+
+block pageTitle
+  title Open nnnChecker
+
+block content
+  p.overview N/S高生であることを証明しよう。
+    br
+    | オープンソースなnnnCheckerを利用していただき、ありがとうございます！
+
+  div.Centor
+    a(href="./nnnsignin")
+      img.topSignin(src="./images/google_signin.png", alt="") 
+    div(style="font-weight: bold; text-align: center; color: red;") サードパーティのライセンスなどに関する情報は、THIRD-PARTY-NOTICES.txtをご覧ください。
+
+    span.importantLink 現在のバージョンでは、サーバーに個人情報などは保存されません。 

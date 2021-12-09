@@ -1,0 +1,12 @@
+extends layout
+
+block pageTitle
+  title エラー | Open nnnChecker
+
+block content
+  h1(style="color: red;") #{error.status} #{message}
+  p.overview !{userMessage}
+  pre #{error.stack}
+
+  p.overview
+    a(href="../../home").importantLink ホーム

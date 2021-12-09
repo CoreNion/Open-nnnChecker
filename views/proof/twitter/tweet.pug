@@ -1,0 +1,21 @@
+extends ../../layout
+
+block pageTitle
+  title ツイート成功 | Open nnnChecker
+  script(async src="https://platform.twitter.com/widgets.js") 
+
+block content
+  p.overview 
+    | 証明のツイートに成功しました！
+    | ツイートはこちらです！
+
+  blockquote.twitter-tweet.tw-align-center(data-theme="dark")
+    a(href=`https://twitter.com/${userName}/status/${tweetID}`)
+
+  p.overview 
+    a(href=`https://twitter.com/${userName}/status/${tweetID}`).importantLink 非公開アカウントでツイートが表示されない場合はこちら
+
+  p.overview
+    a(href="../../home").importantLink ホーム
+    br
+    a(href="../../logout").importantLink ログアウト
